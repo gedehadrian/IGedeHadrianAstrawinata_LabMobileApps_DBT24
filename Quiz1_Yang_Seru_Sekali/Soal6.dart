@@ -4,7 +4,7 @@ import 'dart:io';
 void main() {
   Account a = Account();
   a.depo(100);
-  a.wd(25);
+  a.wd(110);
 }
 
 class Account {
