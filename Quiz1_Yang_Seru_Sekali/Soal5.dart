@@ -4,14 +4,13 @@ class Ujian {
   int totalNilai = 0;
 
   void tambahNilai() {
-    for (int i = 0; i < 3; i++) {
+    for (var i = 0; i < 3; i++) {
       stdout.write("Masukan Nama: ");
-      String? nama = stdin.readLineSync();
+      stdin.readLineSync();
 
       stdout.write("Masukan Nilai: ");
-      String? inputNilai = stdin.readLineSync();
-
-      int nilaiAngka = int.tryParse(inputNilai ?? "") ?? 0;
+      var input = stdin.readLineSync() ?? "";
+      int nilaiAngka = int.tryParse(input) ?? 0;
 
       totalNilai += nilaiAngka;
     }
