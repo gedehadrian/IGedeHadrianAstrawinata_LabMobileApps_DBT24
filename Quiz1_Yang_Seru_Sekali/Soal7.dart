@@ -4,7 +4,6 @@ void main() {
 
   List<int> c = [...a, ...b];
   c.sort();
-  int initial = 0;
 
   print({c[c.length - 2]});
 }
