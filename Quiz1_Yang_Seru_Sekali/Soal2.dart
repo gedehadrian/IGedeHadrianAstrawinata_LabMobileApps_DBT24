@@ -19,8 +19,6 @@ void main() {
     if (input == pilihan[randChoice]) {
       print("Kamu Keren Benar Sekali Brody");
       break;
-    } else {
-      print("Salah Bro");
     }
   }
 }
