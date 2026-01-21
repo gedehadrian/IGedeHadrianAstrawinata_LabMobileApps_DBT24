@@ -2,19 +2,32 @@ import 'dart:io';
 import 'dart:math';
 
 void main() {
-  var cobaan = 0;
   final random = Random();
-  int intFinal = random.nextInt(100) + 1;
+  final int target = random.nextInt(100) + 1;
+  int percobaan = 0;
+
+  print("Tebak angka antara 1 sampai 100!");
+
   while (true) {
-    String? jawaban = stdin.readLineSync();
-    if (intFinal == jawaban) {
-      print("Jawaban Benar = $intFinal, jumalah percobaan $cobaan");
-      break;
-    }
-    if (intFinal != jawaban) {
-      print("Salah");
-      cobaan += 1;
+    stdout.write("Masukkan tebakan Anda: ");
+    String? input = stdin.readLineSync();
+    int? tebakan = int.tryParse(input ?? "");
+
+    if (tebakan == null) {
+      print("Masukkan angka yang valid.");
       continue;
+    }
+
+    percobaan++;
+
+    if (tebakan == target) {
+      print("Selamat! Jawaban benar: $target.");
+      print("Total percobaan: $percobaan");
+      break;
+    } else if (tebakan < target) {
+      print("Terlalu rendah!");
+    } else {
+      print("Terlalu tinggi!");
     }
   }
 }
