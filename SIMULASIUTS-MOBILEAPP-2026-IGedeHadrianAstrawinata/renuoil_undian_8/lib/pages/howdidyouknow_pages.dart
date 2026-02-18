@@ -62,8 +62,15 @@ class _HowDidYouKnowPageState extends State<HowDidYouKnowPage> {
                     style: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF3B2A1A),
+                      color: Colors.black,
                       height: 1.2,
+                      shadows: [
+                        Shadow(
+                          offset: Offset(2, 2), // geser shadow (x, y)
+                          blurRadius: 4, // blur bayangan
+                          color: Colors.black26,
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(height: 32),
