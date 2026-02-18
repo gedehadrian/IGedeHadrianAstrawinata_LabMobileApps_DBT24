@@ -85,7 +85,14 @@ class _NameFormPageState extends State<NameFormPage>
                       style: TextStyle(
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xFF3B2A1A),
+                        color: Colors.black,
+                        shadows: [
+                          Shadow(
+                            offset: Offset(3, 3),
+                            blurRadius: 4,
+                            color: Colors.black26,
+                          ),
+                        ],
                       ),
                     ),
                     const SizedBox(height: 32),

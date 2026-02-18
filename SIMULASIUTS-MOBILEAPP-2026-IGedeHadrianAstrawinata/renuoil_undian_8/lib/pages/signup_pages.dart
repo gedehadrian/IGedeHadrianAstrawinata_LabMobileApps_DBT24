@@ -145,7 +145,7 @@ class _SignupPageState extends State<SignupPage>
                                       shadows: [
                                         Shadow(
                                           color: Colors.black26,
-                                          offset: Offset(0, 2),
+                                          offset: Offset(2, 2),
                                           blurRadius: 4,
                                         ),
                                       ],

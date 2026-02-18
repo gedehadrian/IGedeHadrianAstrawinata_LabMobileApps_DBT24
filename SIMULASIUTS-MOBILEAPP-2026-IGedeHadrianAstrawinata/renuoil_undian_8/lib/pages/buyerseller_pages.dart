@@ -74,7 +74,14 @@ class _BuyerSellerFormPageState extends State<BuyerSellerFormPage>
                     style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF3B2A1A),
+                      color: Colors.black,
+                      shadows: [
+                        Shadow(
+                          offset: Offset(3, 3),
+                          blurRadius: 4,
+                          color: Colors.black26,
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(height: 8),
